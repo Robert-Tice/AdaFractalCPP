@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Ada Fractals</title>
+
+  </head>
+  <body>
+    <div id="wrapper">
+        <div id="toolbar">
+            <ul>
+                <li><a id="fixed_mandlebrot" class="active" href="#">Fixed Point Mandlebrot</a><span id="fixed_speed">0.0 ms</span></li>
+                <li><a id="float_mandlebrot" href="#">Floating Point Mandlebrot</a><span id="float_speed">0.0 ms</span></li>
+                <li><a id="reset_zoom" href="#">Reset Zoom</a></li>
+                <li><span>Click to zoom in. Shift+Click to zoom out.</span></li>
+            </ul>
+        </div>
+
+        <div id="canvas_container">
+            <canvas id="fractalCanvas"></canvas>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha256-jnOjDTXIPqall8M0MyTSt98JetJuZ7Yu+1Jm7hLTF7U=" crossorigin="anonymous"></script>
+    <script src="js/renderer.js"></script>
+  </body>
+</html>
